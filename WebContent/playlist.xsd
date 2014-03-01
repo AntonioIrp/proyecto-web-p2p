@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/playlist" xmlns="http://www.example.org/playlist" elementFormDefault="qualified">
+<xsd:element name="playlist">
+	<xsd:complexType>
+		<xsd:sequence>
+			<xsd:element name="trackList" minOccurs="1" maxOccurs="unbounded">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="track" minOccurs="1" maxOccurs="unbounded">
+							<xsd:complexType>
+								<xsd:sequence>
+									<xsd:element name="title" type="xsd:string" minOccurs="1" maxOccurs="1"> </xsd:element>
+									<xsd:element name="annotation" type="xsd:string" minOccurs="1" maxOccurs="1"> </xsd:element>
+									<xsd:element name="info" type="xsd:string" minOccurs="1" maxOccurs="1"> </xsd:element>
+									<xsd:element name="location" type="xsd:string" minOccurs="1" maxOccurs="1"> </xsd:element>
+									<xsd:element name="image" type="xsd:string" minOccurs="0" maxOccurs="1"> </xsd:element>
+									<xsd:element name="identifier" type="xsd:string" minOccurs="1" maxOccurs="1"> </xsd:element>
+								</xsd:sequence>
+							</xsd:complexType>
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:element>
+</xsd:schema>
