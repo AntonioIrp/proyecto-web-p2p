@@ -79,7 +79,7 @@ public class playlist2db extends DefaultHandler {
 		   
 		try{
 			Class.forName("com.mysql.jdbc.Driver");
-			conn=DriverManager.getConnection("jdbc:mysql://localhost/aatt","root","samba1234");
+			conn=DriverManager.getConnection("jdbc:mysql://localhost/aatt","root","");
 			stm=conn.createStatement();
 			stm.execute(sql);
 			stm.close();

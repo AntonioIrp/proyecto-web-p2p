@@ -19,7 +19,7 @@ public class DAOBuscar{
 		if (peticion.equals("")!=true){
 		try{
 			Class.forName("com.mysql.jdbc.Driver");
-			conn=DriverManager.getConnection("jdbc:mysql://127.0.0.1/aatt","root","samba1234");
+			conn=DriverManager.getConnection("jdbc:mysql://127.0.0.1/aatt","root","");
 			stm=conn.createStatement();
 			rs=stm.executeQuery(sql);		
 			while(rs.next()){
